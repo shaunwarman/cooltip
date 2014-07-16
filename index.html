@@ -6,15 +6,7 @@
 	<title>
 		Cooltip | example
 	</title>
-<link rel="stylesheet" href="//code.jquery.com/ui/1.11.0/themes/smoothness/jquery-ui.css">
-  <script src="//code.jquery.com/jquery-1.10.2.js"></script>
-  <script src="//code.jquery.com/ui/1.11.0/jquery-ui.js"></script>
-  <link rel="stylesheet" href="/resources/demos/style.css">
-  <script>
-  $(function() {
-    $( document ).tooltip();
-  });
-  </script>
+<link type="text/css" rel="stylesheet" href="css/bootstrap.css">
   <style>
   label {
     display: inline-block;
@@ -22,13 +14,28 @@
   }
 
   .ui-tooltip {
-    background: blue;
-  }
+  background: blue;
+  color: white;
+}
+
+body {
+  margin-left: 25px;
+}
+
   </style>
 </head>
 <body>
-<p><label for="Tooltip">Test it:</label><input id="age" title="Hovering information..."></p>
-<p>Hover the field to see the tooltip.</p>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js" />
+  <script src="js/bootstrap.js"></script>
+  <script src="js/tooltip.js"></script>
+  <script>
+  $(function() {
+    $('#tipId').tooltip();
+  })
+  </script>
+
+<h1>Tooltip</h1>
+<a href="#" id="tipId" class="btn btn-primary" data-content="This is it" data-placement="bottom" data-original-title="title">Button</a>
 
 </body>
 
