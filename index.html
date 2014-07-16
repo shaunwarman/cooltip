@@ -13,7 +13,7 @@
     width: 5em;
   }
 
-  .ui-tooltip {
+.ui-tooltip {
   background: blue;
   color: white;
 }
@@ -30,12 +30,12 @@ body {
   <script src="js/tooltip.js"></script>
   <script>
   $(function() {
-    $('#tipId').tooltip();
+    $('#tipId').tooltip({trigger: 'hover','placement': 'bottom'});
   })
   </script>
 
 <h1>Tooltip</h1>
-<a href="#" id="tipId" class="btn btn-primary" data-content="This is it" data-placement="bottom" data-original-title="title">Button</a>
+<a href="#" id="tipId" class="btn btn-primary" data-content="This is it" data-original-title="title">Button</a>
 
 </body>
 
